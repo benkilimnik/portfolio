@@ -6,7 +6,7 @@ In this example I use the postgres image from dockerhub and package our flask ap
 Clone the github repository on a server via
 
 ```
-git clone https://github.com/BookOBenji/cs0060-final-project-stryvr.git
+git clone https://github.com/benkilimnik/portfolio/tree/master/stryv.git
 
 ```
 
