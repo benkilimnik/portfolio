@@ -1,9 +1,8 @@
 # NorthernTorch
 - Is a create react app that allows users to take assessments given an access code and view data visualizations of their results. 
-- Leveraged React, ChartJS, the Ant Design ui framework, and custom css to fit the application to client's specifications
+- Leveraged React, ChartJS, the Ant Design ui framework, and custom css  
 - Created custom backend code (NodeJS) to interface between React application and the Google Firebase cloud database system
-- Regular communication with client to ensure the smooth development of a product tailored to their needs
-- Deployed production build to hosted web server
+- Deployed production build to hosted web server at https://Northerntorch.com
 
 # Stryv
 - Is a Flask app that allows users to create project ideas and post them to a public homepage where others can add them to their profile
