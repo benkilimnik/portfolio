@@ -1,0 +1,76 @@
+{
+  "set1": [
+    ["Cautious", "Takes Risk", "Motivating", "Willing to Help"],
+    ["Self-disciplined", "Asks questions", "Action oriented", "Animated"],
+    ["Inspiring", "Quiet", "Pleasant", "Challenging"],
+    ["Will try new things", "Wants to please", "Optimistic", "Likes details"],
+    ["Takes charge", "Caring", "Respectful", "Liked by others"],
+    ["Conscientious", "Generous", "Demanding", "Supportive"],
+    ["Concerned for others", "Not extreme", "Likes a challenge", "High energy"],
+    ["Friendly", "Positive", "Orderly", "Results Oriented"],
+    ["Determined", "Persuasive", "Good natured", "Deliberate"],
+    ["Diplomatic", "Cooperative", "Expressive", "Daring"],
+    ["Charming", "Bold", "Loyal", "Analytical"],
+    ["Restless", "Social and humorous", "Goes by the rules", "Team oriented"],
+    ["Original", "Convincing", "Humble", "Gentle"],
+    ["Dependable", "Problem Solver", "Talkative", "Systematic"],
+    ["Playful", "Structured", "Initiator", "Willing"],
+    ["Self-reliant", "Controlled", "Contented", "Trusting"],
+    ["Precise", "Sticks to decisions", "Spontaneous", "Easy going"],
+    ["Agreeable", "Decisive", "Impulsive", "Fact Finder"],
+    ["Outgoing", "Strong Opinions", "Likes Harmony", "Accurate"],
+    ["Independent", "Enthusiastic", "Patient", "Soft-spoken"],
+    ["Engaging", "Organized", "Kind", "Powerful"]
+  ],
+  "set2": [
+    [
+      "When you’re working in a team, what’s most important to you?",
+      "Every member has input",
+      "Work gets done",
+      "Enough information is gathered to do it right",
+      "Freedom and flexibility to be creative"
+    ],
+    [
+      "When making a decision, what’s most important to you?",
+      "Facts and data",
+      "Options and results",
+      "Fast and flexible",
+      "Input and consensus"
+    ],
+    [
+      "What type of communication do you most value?",
+      "Direct and honest",
+      "Stimulating and expressive",
+      "Detailed and logical",
+      "Authentic and considerate"
+    ],
+    [
+      "What describes your ideal environment (home or work)?",
+      "Warm and comfortable",
+      "Structured and uncluttered",
+      "Systematic and orderly",
+      "Dynamic and creative"
+    ],
+    [
+      "An enjoyable social gathering for me would include:",
+      "Networking opportunities",
+      "Activities with a lot of people",
+      "Close connections with friends",
+      "Stimulating conversations with a small group of peers"
+    ],
+    [
+      "Which of the following causes you the most stress?",
+      "Having your time wasted",
+      "Too many rules",
+      "Engaging in conflict",
+      "Forced to make a quick decision"
+    ],
+    [
+      "Which of the following describes your relationship to time?",
+      "I am always early",
+      "I am punctual, expecting meetings to start and end on time",
+      "Sometimes I’m late but I try to be on time",
+      "Time is relative"
+    ]
+  ]
+}

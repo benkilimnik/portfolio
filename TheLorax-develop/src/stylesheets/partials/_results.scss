@@ -1,0 +1,124 @@
+$content-margin-width: 4rem;
+$results-buffer: 4rem;
+$results-buffer-mobile: 3rem;
+
+.results-col {
+  @extend %col;
+  padding-top: 2rem;
+}
+
+.results-row {
+  @extend %row;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.aspect-ratio {
+  position: relative;
+  width: calc(
+    #{"100vh - #{$header-height} - #{$content-margin-height} - #{$footer-height} - #{$results-buffer}"}
+  );
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* initial ratio of 1:1*/
+  }
+
+  @media (max-width: 500px) {
+    width: calc(
+      #{"100vw - #{$content-margin-width} - #{$results-buffer-mobile}"}
+    );
+
+    padding-bottom: 2rem;
+  }
+}
+
+.chart-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.legend-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  height: fit-content;
+  height: -moz-fit-content;
+
+  @media (max-width: 500px) {
+    flex-direction: row;
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.legend-key-wrapper {
+  display: inline-flex;
+
+  @media (max-width: 500px) {
+    width: 100px;
+  }
+
+  @media (max-width: 400px) {
+    width: 95px;
+  }
+}
+
+%legend-color-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.legend-color-1 {
+  @extend %legend-color-box;
+  background: #ff6d1e;
+}
+.legend-color-2 {
+  @extend %legend-color-box;
+  background: #fd6586;
+}
+.legend-color-3 {
+  @extend %legend-color-box;
+  background: #42cbcb;
+}
+.legend-color-4 {
+  @extend %legend-color-box;
+  background: #ffce56;
+}
+
+.ResultsName {
+  background: rgba(184, 184, 184, 0.3);
+  border-radius: 0.2rem;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  margin-left: 1rem;
+  padding: 0.3rem;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+    padding-left: 0.1rem;
+  }
+}
+
+.legend-text {
+  padding-left: 0.8rem;
+  font-size: 18px;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+    padding-left: 0.1rem;
+  }
+}

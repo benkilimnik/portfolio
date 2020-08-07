@@ -1,0 +1,41 @@
+$top-bottom-space: 1rem;
+$between-space: 0.5rem;
+
+%block-page-col {
+  @extend %col;
+  width: auto !important;
+  padding: 0 1rem 1rem 1rem !important;
+  height: fit-content;
+  height: -moz-fit-content;
+}
+
+%block-page-row {
+  @extend %row;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+%block-page-text {
+  font-weight: $heavy;
+  font-size: $big-font-size;
+  text-align: center;
+  margin-bottom: $between-space;
+}
+
+%block-page-icon {
+  font-size: 3.5rem;
+  justify-content: center;
+  display: flex !important;
+  margin-top: $top-bottom-space;
+  margin-bottom: $between-space;
+}
+
+%block-page-button {
+  margin-top: $top-bottom-space;
+}
+
+.go-back-button {
+  @extend %block-page-button;
+}

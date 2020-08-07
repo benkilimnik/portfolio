@@ -1,0 +1,52 @@
+@import "./partials/base";
+@import "./partials/header";
+@import "./partials/signInUp";
+@import "./partials/survey";
+@import "./partials/doneSurvey";
+@import "./partials/alreadySignedIn";
+@import "./partials/notFound";
+@import "./partials/unauthorized";
+@import "./partials/results";
+@import "./partials/admin";
+@import "./partials/noResults";
+@import "./partials/blockPage";
+@import "./partials/graphLoader";
+
+body {
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.background-style {
+  position: relative;
+  background: linear-gradient(45deg, #292626 50%, #9e9e9e 50%);
+  height: 100vh;
+  overflow: auto;
+}
+
+.content {
+  margin-top: $content-margin-height;
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  height: calc(
+    #{"100vh - #{$header-height} - #{$content-margin-height} - #{$footer-height}"}
+  );
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  text-align: center;
+  color: white;
+  z-index: -1;
+}

@@ -1,0 +1,48 @@
+//Font weights
+$light: 100;
+$regular: 400;
+$heavy: 500;
+$bold: 700;
+
+//Base font
+$base-font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 18px;
+$big-font-size: 24px;
+$title-font-size: 36px;
+
+//Colors
+$dark-blue: #133e70;
+$alert-red: #c61133;
+$black: #000000;
+
+//Base Col and Row
+%col {
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+  box-shadow: 0 2px 6px 1px rgba(27, 21, 22, 0.3);
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 0.2rem;
+  width: stretch;
+}
+
+%row {
+  width: stretch;
+}
+
+//Heights
+$header-height: 4rem;
+$content-margin-height: 3rem;
+$footer-height: 3rem;
+
+$header-height-modal: 2rem;
+$content-margin-height-modal: 3rem;
+$footer-height-modal: 2rem;
+$top-bottom-margin-modal: 14rem;
+
+//Widths
+$content-margin-width-modal: 6rem;
+$legend-width: 10.5rem;
+$modal-buffer-width: 4rem;

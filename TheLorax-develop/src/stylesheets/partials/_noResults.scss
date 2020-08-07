@@ -1,0 +1,13 @@
+.no-results-col {
+  @extend %block-page-col;
+}
+.no-results-row {
+  @extend %block-page-row;
+}
+.no-results-icon {
+  @extend %block-page-icon;
+}
+.no-results-text {
+  @extend %block-page-text;
+  color: $dark-blue;
+}

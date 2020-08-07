@@ -1,0 +1,16 @@
+.unauthorized-col {
+  @extend %block-page-col;
+}
+
+.unauthorized-row {
+  @extend %block-page-row;
+}
+
+.unauthorized-icon {
+  @extend %block-page-icon;
+}
+
+.unauthorized-text {
+  @extend %block-page-text;
+  color: $alert-red;
+}

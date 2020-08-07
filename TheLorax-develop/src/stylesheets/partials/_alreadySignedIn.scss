@@ -1,0 +1,16 @@
+.already-in-col {
+  @extend %block-page-col;
+}
+
+.already-in-row {
+  @extend %block-page-row;
+}
+
+.already-in-icon {
+  @extend %block-page-icon;
+}
+
+.already-in-text {
+  @extend %block-page-text;
+  color: $alert-red;
+}

@@ -1,0 +1,82 @@
+.radio {
+  white-space: normal !important;
+  display: block !important;
+  line-height: 30px !important;
+}
+
+.survey-col {
+  @extend %col;
+  overflow-y: scroll;
+}
+
+.survey-row {
+  @extend %row;
+  margin-top: 0.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.survey-title {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0.5rem;
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
+.survey-subtitle {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .survey-title {
+    font-size: 30px;
+  }
+  .survey-subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .survey-row {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .survey-title {
+    font-size: 25px;
+  }
+  .survey-subtitle {
+    font-size: 15px;
+  }
+}
+
+.survey-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.survey-form-item-1 {
+  width: 11rem;
+}
+
+.survey-form-item-2 {
+  width: 420px;
+}
+
+@media (max-width: 1050px) {
+  .survey-form-item-2 {
+    width: 100%;
+  }
+}
+
+.survey-q-long {
+  font-weight: bold;
+  width: 100%;
+}
+
+.survey-button {
+  width: 13rem;
+  margin-bottom: 1rem;
+  font-size: $base-font-size !important;
+}

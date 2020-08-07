@@ -1,0 +1,16 @@
+.not-found-col {
+  @extend %block-page-col;
+}
+
+.not-found-row {
+  @extend %block-page-row;
+}
+
+.not-found-icon {
+  @extend %block-page-icon;
+}
+
+.not-found-text {
+  @extend %block-page-text;
+  color: $alert-red;
+}

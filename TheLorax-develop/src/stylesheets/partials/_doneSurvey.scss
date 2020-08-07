@@ -1,0 +1,20 @@
+.done-survey-col {
+  @extend %block-page-col;
+}
+
+.done-survey-row {
+  @extend %block-page-row;
+}
+
+.done-survey-icon {
+  @extend %block-page-icon;
+}
+
+.done-survey-text {
+  @extend %block-page-text;
+  color: $dark-blue;
+}
+
+.view-results-button {
+  @extend %block-page-button;
+}
