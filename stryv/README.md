@@ -39,7 +39,6 @@ Stryv 1.0 should now be up and running!
 
 The organisation of this app is as follows:
 ```
-/cs00600-final-project-stryvr
     /stryv
         stryv.py
         /static
