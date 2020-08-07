@@ -1,4 +1,5 @@
-This dynamic website was built for a client in Cambodia and is hosted under https://northerntorch.com.
+# React App
+I built this react app for a client in Cambodia. A production-ready version is currently in use and hosted under https://northerntorch.com.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
