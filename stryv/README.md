@@ -1,7 +1,7 @@
 # Stryv
 
 ## How to deploy the server
-In this example we use the postgres image from dockerhub and package our flask app in a container. In order to deploy Stryv, follow these steps:
+In this example I use the postgres image from dockerhub and package our flask app in a container. In order to deploy Stryv, follow these steps:
 
 Clone the github repository on a server via
 
@@ -37,7 +37,7 @@ Stryv 1.0 should now be up and running!
 
 ## Organisation
 
-The organisation of our app is as follows:
+The organisation of this app is as follows:
 ```
 /cs00600-final-project-stryvr
     /stryv
