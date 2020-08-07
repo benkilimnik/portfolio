@@ -1,21 +1,52 @@
-# Dockerizing a Flask application
+# Stryv
 
-In this example we use the postgres image from dockerhub and package our flask app in a container too.
+## How to deploy the server
+In this example we use the postgres image from dockerhub and package our flask app in a container. In order to deploy Stryv, follow these steps:
 
-Start postgres via
-
-```
-mkdir db-data
-
-docker run --name postgres -e POSTGRES_PASSWORD=docker \
-                  --rm -p 5432:5432 -v db-data:/var/lib/postgresql/data postgres
-```
-
-
-Start then flask app via
+Clone the github repository on a server via
 
 ```
-docker run --name login -p 8000:5000 --link postgres:dbserver -e DBURI='postgresql://postgres:docker@dbserver/postgres' -e APP_SECRET='test' --rm login:latest
+git clone https://github.com/BookOBenji/cs0060-final-project-stryvr.git
+
 ```
 
-Make sure to add users etc. via flask shell e.g.
+Build a docker image in the directory of the repository via
+
+```
+docker build -t login:latest .
+```
+
+In the directory that contains the docker-compose.yml file, run
+
+```
+mkdir db-data/
+DATA_DIR=[path to...]/db-data && docker-compose up -d
+```
+
+Create the database via
+
+```
+docker exec -it [login:latest container ID] bash
+flask shell
+>> from login import db
+>> db.create_all()
+>> exit()
+
+```
+Stryv 1.0 should now be up and running!
+
+## Organisation
+
+The organisation of our app is as follows:
+```
+/cs00600-final-project-stryvr
+    /stryv
+        stryv.py
+        /static
+            /css
+                style.css
+            /js
+                main_scripts.js
+        /templates
+            main.html
+```
