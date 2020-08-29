@@ -1,0 +1,71 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+{% block title %}Striver Challenge Page{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="min-width:1100px">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href=" {{ url_for('myProfile') }}"> My Profile </a>
+                    </li>
+                    <li>
+                        <a href=" {{ url_for('arena') }}">Today's Challenges</a>
+                    </li>
+                    <li>
+                        <a href=" {{ url_for('add_challenge_page') }}">Add Challenge</a>
+                    </li>
+                    <li>
+                        <a href=" {{ url_for('logout') }}">Logout</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left" style="font-size:xx-large;">
+                    <li><a href=" {{ url_for('arena') }}" style="margin-left:-80px;">Striver</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% endblock %}
+
+
+    {% block content %}
+
+    <body>
+
+        <div class="row" style="background-color: white; margin: 50px 50px 50px 50px;">
+            <h1 style="margin-bottom:50px; margin-left:40px; margin-top: 30px;">Today's challenges</h1>
+            {% for challenge in challenges|reverse %}
+            <div class="col-sm-6">
+
+                <div class="card bg-light mb-3 "
+                    style="max-width: 18rem; max-height: 14rem; border: 2.4px solid; border-color: #a7a7a7a7; border-radius: 7px; min-width:400px; min-height:150px; margin: 0px 30px 30px 30px;">
+                    <div class="card-body flex-column d-inline-flex">
+
+                        <h4 class="card-title" style="margin: 10px 20px 20px 20px;">{{challenge.title}}</h4>
+                        <p class="card-text" style="margin: 10px 20px 20px 20px;">{{challenge.description}}</p>
+
+                        <div class="card-footer">
+                            <form action="/checkoutChallenge" method="POST" class="challenge_pick" role="form">
+
+                                <button id={{ challenge.title }} name="value" value={{ challenge.title }}
+                                    class="btn btn-primary align-self-end">Accept challenge!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        {% block javascript %}
+        <script src="{{url_for('static', filename='challenge_page.js')}}"></script>
+        {% endblock %}
+    </body>
+
+    {% endblock %}
