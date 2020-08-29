@@ -30,12 +30,7 @@ python3
 ## How to deploy the server using docker container
 In this example I use the postgres image from dockerhub and package our flask app in a container. In order to deploy Striver, follow these steps:
 
-Clone the github repository on a server via
-
-```
-git clone https://github.com/benkilimnik/portfolio/tree/master/stryv.git
-
-```
+Clone the github repository on a server.
 
 Build a docker image in the directory of the repository via
 
