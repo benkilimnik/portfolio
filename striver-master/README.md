@@ -60,7 +60,7 @@ flask shell
 >> exit()
 
 ```
-Stryv 1.0 should now be up and running!
+Striver 1.0 should now be up and running!
 
 ## Organisation
 
