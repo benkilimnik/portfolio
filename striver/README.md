@@ -61,18 +61,3 @@ flask shell
 
 ```
 Striver 1.0 should now be up and running!
-
-## Organisation
-
-The organisation of this app is as follows:
-```
-    /stryv
-        stryv.py
-        /static
-            /css
-                style.css
-            /js
-                main_scripts.js
-        /templates
-            main.html
-```
