@@ -1,8 +1,9 @@
 # Portfolio Website
 kilimnik.org
 
-# Fractal Generator (implementation of Mandelbrot Set in numpy, hosted with Flask)
+# Fractal Generator
 https://mbrot.herokuapp.com/
+- Implementation of Mandelbrot set in numpy, hosted with Flask
 
 # NorthernTorch
 - Is a create react app that allows users to take assessments given an access code and view data visualizations of their results. 
