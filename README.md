@@ -4,9 +4,6 @@
 - Created custom backend code (NodeJS) to interface between React application and the Google Firebase cloud database system
 - Deployed production build to hosted web server at https://Northerntorch.com
 
-# Portfolio Website
-https://kilimnik.org
-
 # Fractal Generator
 https://mbrot.herokuapp.com/
 - Implementation of Mandelbrot set in numpy, web-app written in Flask and deployed to heroku.
