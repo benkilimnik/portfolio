@@ -5,9 +5,6 @@ from io import BytesIO
 import math
 import numpy as np
 
-
-# NOTE: You do not have to touch this code, however if you want feel free to play around with it.
-
 table = [(66, 30, 15),
          (25, 7, 26),
          (9, 1, 47),
@@ -64,22 +61,9 @@ def generate_mbrot(xa, xb, ya, yb, w=512, h=512):
         zy = y * (yb - ya) * dy + ya
         for x in range(imgx):
             zx = x * (xb - xa) * dx + xa
-
-            # use this code for faster mandelbrot generation
             z = zx + zy * 1j
             col = mandelbrot(z, maxIt)
             col = (int(col[0]), int(col[1]), int(col[2]))
-
-            # # 2x2 antialiasing
-            # z = zx + zy * 1j
-            # z1 = z + (d2x + d2y * 1j)
-            # z2 = z + (d2x - d2y * 1j)
-            # z3 = z + (- d2x + d2y * 1j)
-            # z4 = z + (- d2x - d2y * 1j)
-            # col = .25 * (np.array(mandelbrot(z1, maxIt)) +
-            #              np.array(mandelbrot(z2, maxIt)) +
-            #              np.array(mandelbrot(z3, maxIt)) +
-            #              np.array(mandelbrot(z4, maxIt)))
 
             col = (int(col[0]), int(col[1]), int(col[2]))
             image.putpixel((x, y), tuple(col))
