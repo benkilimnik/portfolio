@@ -1,8 +1,9 @@
 # NorthernTorch
-- Is a create react app that allows users to take assessments given an access code and view data visualizations of their results. Built for a client in Cambodia to support his educational workshops in Cambodia (founder of the Justice and Soul Foundation https://justiceandsoul.org/)
+- Is a create react app that allows users to take assessments given an access code and view data visualizations of their results. 
 - Leveraged React, ChartJS, the Ant Design ui framework, and custom css  
 - Created custom backend code (NodeJS) to interface between React application and the Google Firebase cloud database system
 - Deployed production build to hosted web server at https://northerntorch.com
+- Webapp built for a client in Cambodia to support his educational workshops in Cambodia (founder of the Justice and Soul Foundation https://justiceandsoul.org/)
 
 # Fractal Generator
 https://mbrot.herokuapp.com/
