@@ -2,9 +2,7 @@
 # Design
 This multi-threaded proxy acts as a MySQL database while interfacing with a GDPR-compliant database called Pelton. Queries are converted to C compatible types and sent to Pelton. Responses are converted to rust compatible types and returned. Any application that uses a MySQL backend may connect to this proxy instead of a traditional database.
 
-![mysql_proxy](https://user-images.githubusercontent.com/47846691/142962769-038774df-5d8b-4b2f-b345-700e87d24eb9.png)
-![Pelton Diagrams SYMPOSIUM drawio](https://user-images.githubusercontent.com/47846691/142964194-1c480262-49ef-4bba-828e-8a5865416441.png)
-
+![Pelton Diagrams SYMPOSIUM drawio (1)](https://user-images.githubusercontent.com/47846691/142964237-f79a255c-1d34-4a80-9a7d-65ad5be7cee8.png)
 
 - Flow:  
 Application <=> Mysql Proxy <=> FFI <=> Pelton API (C++)
