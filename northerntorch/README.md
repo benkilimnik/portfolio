@@ -1,5 +1,9 @@
-# React App
-I built this react app for a client in Cambodia. A production-ready version is currently in use and hosted under https://northerntorch.com.
+# Northern Torch Consulting
+I built this react app for a freelance consultant from Seattle. A production-ready version is currently in use and hosted under https://northerntorch.com.
+
+User and Admin guides can be found below, detailing the functionality of the application:
+[User Guide](https://drive.google.com/file/d/1e4Xdz0jw9Ty9PH5mH0DxVbdFQ9PssB02/view?usp=sharing)
+[Admin Guide](https://drive.google.com/file/d/1e4Xdz0jw9Ty9PH5mH0DxVbdFQ9PssB02/view)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
