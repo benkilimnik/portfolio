@@ -2,9 +2,9 @@
 I built this react app for a freelance consultant from Seattle. A production-ready version is currently in use and hosted under https://northerntorch.com.
 
 ## Documentation
-User and Admin guides can be found below, detailing the functionality of the application:  
-- [User Guide](https://drive.google.com/file/d/1pwZdyXa7bznWxFOkNnKpS2lvCwZ6MR2g/view?usp=sharing)  
+User and Admin guides can be found below, detailing the functionality of the application: 
 - [Admin Guide](https://drive.google.com/file/d/1e4Xdz0jw9Ty9PH5mH0DxVbdFQ9PssB02/view)
+- [User Guide](https://drive.google.com/file/d/1pwZdyXa7bznWxFOkNnKpS2lvCwZ6MR2g/view?usp=sharing)  
 
 ## Available Scripts
 
